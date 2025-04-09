@@ -1,11 +1,6 @@
 services:
   - type: web
-    name: health-notion-webhook
-    env: python
+    name: apple-health-notion-sync
+    runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-    envVars:
-      - key: NOTION_API_KEY
-        value: ntn_D42510382927IzfqpWSZF6OecQvcntjG9axVgk7lNRab4u
-      - key: NOTION_DATABASE_ID
-        value: 1cf0fd61b25481a4bc81d1ed92b5f7b6
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
