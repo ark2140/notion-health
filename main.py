@@ -5,7 +5,7 @@ from datetime import datetime
 app = FastAPI()
 
 # Hardcoded for personal use
-NOTION_SECRET = "ntn_D42510382927IzfqpWSZF6OecQvcntjG9axVgk7lNRab4u"
+NOTION_SECRET = "ntn_Z42510382929gfgDwfwxCPIF2m4G4ibUyEe9m3IY1mQ3O7"
 NOTION_DATABASE_ID = "1cf0fd61b25481a4bc81d1ed92b5f7b6"
 
 @app.post("/webhook")
